@@ -14,18 +14,11 @@ This repository contains the code and data for my graduation project.
 ![](data/FT.png)
 ## Getting Started
 
-The evaluation contains a baseline using by SimCSE, first install the `simcse` package from PyPI, you can also refer to the link [SimCSE](https://github.com/princeton-nlp/SimCSE)
-
-```bash
-pip install simcse
-```
-
 Note that if you want to enable GPU encoding, you should install the correct version of PyTorch that supports CUDA. See [PyTorch official website](https://pytorch.org) for instructions.
 
 ## Model List
 
 You can download the models using [HuggingFace's Transformers](https://github.com/huggingface/transformers). 
-
 
 ### Requirements
 
@@ -41,20 +34,13 @@ If you instead use **CUDA** `<11` or **CPU**, install PyTorch by the following c
 pip install torch==1.7.1
 ```
 
-
-Then run the following script to install the remaining dependencies,
-
-```bash
-pip install -r requirements.txt
-```
-
 ### Datasets
 You can download the datasets via baidu network disk. I will release them later.
 
 ### Training & Evaluation
-Adjust the pre-trained model and the tokenizer via "simcse/models.py" and then run "train.py" for training. Note that you should offer the arguments like "--training_file", "--model_name_or_path", etc.
-If you use our method, please refer to "SemEval24-task8/src/train.py", remember to adjust the arguments via "base_config.py". You can later transfer the ".pt" weight to the HF model for the downstream fine-tune tasks.
-For the downstream fine-tune task, only run "train_ours.py". It will automatically evaluate the model using the testing and evaluating datasets.
+- Adjust the pre-trained model and the tokenizer via "simcse/models.py" and then run "train.py" for training. Note that you should offer the arguments like "--training_file", "--model_name_or_path", etc.
+- If you use our method, please refer to "SemEval24-task8/src/train.py", remember to adjust the arguments via "base_config.py". You can later transfer the ".pt" weight to the HF model for the downstream fine-tune tasks.
+- For the downstream fine-tune task, only run "train_ours.py". It will automatically evaluate the model using the testing and evaluating datasets.
 
 ## Bugs or questions?
 
