@@ -10,8 +10,8 @@ This repository contains the code and data for my graduation project.
 - Comprehensive Evaluation: Evaluated performance using metrics such as Accuracy, Precision, Recall, F1-score, AUROC, STD and Domain Gap compared against baseline models.
 - Cross-Domain Effectiveness: Achieved significant improvements in cross-domain AI text detection, demonstrating strong generalization and domain transfer capabilities.
 
-![](figure/model.png)
-
+![](data/CL.png)
+![](data/FT.png)
 ## Getting Started
 
 The evaluation contains a baseline using by SimCSE, first install the `simcse` package from PyPI, you can also refer to the link [SimCSE](https://github.com/princeton-nlp/SimCSE)
