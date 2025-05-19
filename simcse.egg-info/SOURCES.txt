@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+simcse/__init__.py
+simcse/models.py
+simcse/tool.py
+simcse/trainers.py
+simcse.egg-info/PKG-INFO
+simcse.egg-info/SOURCES.txt
+simcse.egg-info/dependency_links.txt
+simcse.egg-info/requires.txt
+simcse.egg-info/top_level.txt
